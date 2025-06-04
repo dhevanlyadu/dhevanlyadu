@@ -52,30 +52,6 @@
     padding-left: 100%;
     animation: marquee 20s linear infinite;
   }
-/* Tulisan bergerak */
-  @keyframes marquee {
-    0%   { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
-  }
-.text-marquee:hover p {
-  animation-play-state: paused;
-}
-/* Animasi Fade */
-@keyframes fadeInUp {
-  from {
-    opacity: 1;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade {
-  animation: fadeInUp 1s ease both;
-}
-/* end tulisan bergerak */
 /* efek foto muncul */
 .img-pop-wrapper {
   display: inline-block;
@@ -86,3 +62,33 @@
 .img-pop-wrapper:active {
   transform: translateY(-10px) scale(1.05);
 }
+  .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn-start {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-start:hover {
+    background-color: #084298;
+    color: #fff;
+  }
+
+  .card-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
